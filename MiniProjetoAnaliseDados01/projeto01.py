@@ -49,6 +49,8 @@ plt.show()
 # 5 - Total de funcionários por área
 total_func_area_df = funcionarios_df['Area'].value_counts()
 print(total_func_area_df)
+total_func_area_df.plot(kind='bar')
+plt.show()
 
 # 6 - Ticket Médio Mensal
 ticket_medio = clientes_df['Valor Contrato Mensal'].mean()
